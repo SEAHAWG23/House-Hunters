@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Home Search – Fayetteville & Manlius, NY</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+    color: #333;
+  }
+
+  /* Banner using first house image */
+  .banner {
+    width: 100%;
+    height: 220px;
+    background-image: url('https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1200&q=60');
+    background-size: cover;
+    background-position: center;
+  }
+
+  header {
+    background: #2c3e50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 1.6rem;
+  }
+
+  header p {
+    margin-top: 8px;
+    font-size: 0.9rem;
+  }
+
+  .container {
+    padding: 16px;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .grid {
+    display: block;
+  }
+
+  @media (min-width: 800px) {
+    .grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 20px;
+    }
+  }
+
+  .card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 16px;
+    margin-bottom: 20px;
+  }
+
+  .card h2 {
+    margin-top: 0;
+    font-size: 1.3rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+  }
+
+  .card h3 {
+    margin-top: 16px;
+    font-size: 1.1rem;
+  }
+
+  ul {
+    padding-left: 18px;
+    margin: 0;
+  }
+
+  ul li {
+    margin-bottom: 6px;
+    font-size: 0.95rem;
+  }
+
+  .tag, .pill {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    margin: 4px 4px 0 0;
+    color: #fff;
+  }
+
+  .tag { background: #3498db; }
+  .pill { background: #27ae60; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+    font-size: 0.85rem;
+  }
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+  th {
+    background: #ecf0f1;
+  }
+
+  .footer-note {
+    font-size: 0.8rem;
+    color: #777;
+    margin-top: 10px;
+  }
+</style>
+</head>
+
+<body>
+
+<!-- Banner with first house image -->
+<div class="banner"></div>
+
+<header>
+  <h1>Home Search – Fayetteville & Manlius, NY</h1>
+  <p>3-bed ranch • Bonus room • AC • 2-car garage • Updated kitchen • Large master bath • $350k–$400k</p>
+</header>
+
+<div class="container">
+
+  <div class="grid">
+
+    <!-- LEFT COLUMN -->
+    <div>
+
+      <div class="card">
+        <h2>Your Home Criteria</h2>
+        <ul>
+          <li>Single-family home</li>
+          <li>3 bedrooms + bonus room</li>
+          <li>Single-story ranch preferred</li>
+          <li>Central air conditioning</li>
+          <li>2-car attached garage</li>
+          <li>Updated kitchen</li>
+          <li>Budget: $350k–$400k</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Target Neighborhoods</h2>
+
+        <h3>Fayetteville</h3>
+        <ul>
+          <li><strong>Lyndon / Highbridge:</strong> Quiet, mature, many ranches.</li>
+          <li><strong>Huntleigh / Mallards Landing:</strong> Newer homes, larger suites.</li>
+          <li><strong>FM Border:</strong> Ranches with bonus rooms.</li>
+        </ul>
+
+        <h3>Manlius</h3>
+        <ul>
+          <li><strong>Village area:</strong> Walkable, single-level ranches.</li>
+          <li><strong>Outer Manlius:</strong> Larger lots, updated kitchens.</li>
+        </ul>
+      </div>
+
+<div class="card">
+  <h2>Check Commute to Hancock Field</h2>
+  <p>Enter a home address to instantly see distance and travel time to Hancock Field Air Force Base.</p>
+
+  <form action="https://www.google.com/maps" method="get" target="_blank" style="margin-top:10px;">
+    <input 
+      type="text" 
+      name="saddr" 
+      placeholder="Enter home address…" 
+      style="width:100%; padding:10px; border-radius:6px; border:1px solid #ccc; margin-bottom:10px;"
+      required
+    >
+    <input 
+      type="hidden" 
+      name="daddr" 
+      value="Hancock Field Air National Guard Base, Syracuse, NY"
+    >
+    <button 
+      type="submit" 
+      class="tag" 
+      style="background:#27ae60; padding:10px 14px; font-size:0.85rem; border:none; cursor:pointer;"
+    >
+      Get Directions to Hancock Field
+    </button>
+  </form>
+</div>
+
+      <div class="card">
+        <h2>Search Filters</h2>
+
+        <div>
+          <span class="tag">Single-family</span>
+          <span class="tag">3+ beds</span>
+          <span class="tag">2+ baths</span>
+          <span class="tag">Ranch</span>
+          <span class="tag">Central air</span>
+          <span class="tag">2-car garage</span>
+          <span class="tag">Updated kitchen</span>
+          <span class="tag">Primary suite</span>
+          <span class="tag">$300k–$400k</span>
+        </div>
+
+        <h3>Keywords</h3>
+        <div>
+          <span class="pill">one-level living</span>
+          <span class="pill">primary bath</span>
+          <span class="pill">updated kitchen</span>
+          <span class="pill">central air</span>
+        </div>
+      </div>
+	  
+	<div class="card">
+  <h2>Quick Search Links</h2>
+  <p>Preset searches for Fayetteville & Manlius:</p>
+
+  <!-- Realtor -->
+  <a href="https://www.realtor.com/realestateandhomes-search/Fayetteville_NY/type-single-family-home/price-300000-400000/beds-3/baths-2" 
+     target="_blank" class="tag">
+    Realtor – Fayetteville
+  </a>
+
+  <a href="https://www.realtor.com/realestateandhomes-search/Manlius_NY/type-single-family-home/price-300000-400000/beds-3/baths-2" 
+     target="_blank" class="tag">
+    Realtor – Manlius
+  </a>
+
+  <!-- Zillow -->
+  <a href="https://www.zillow.com/fayetteville-ny/3-_beds/2-_baths/300000-400000_price/house_type/" 
+     target="_blank" class="tag">
+    Zillow – Fayetteville
+  </a>
+
+  <a href="https://www.zillow.com/manlius-ny/3-_beds/2-_baths/300000-400000_price/house_type/" 
+     target="_blank" class="tag">
+    Zillow – Manlius
+  </a>
+
+  <!-- Redfin (Correct City IDs) -->
+  <a href="https://www.redfin.com/city/6576/NY/Fayetteville/filter/property-type=house,min-beds=3,min-baths=2,price=300-400k" 
+     target="_blank" class="tag" style="background:#c0392b;">
+    Redfin – Fayetteville
+  </a>
+
+  <a href="https://www.redfin.com/city/30326/NY/Manlius/filter/property-type=house,min-beds=3,min-baths=2,price=300-400k" 
+     target="_blank" class="tag" style="background:#c0392b;">
+    Redfin – Manlius
+  </a>
+</div>
+
+
+
+
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div>
+
+      <div class="card">
+        <h2>Representative Homes</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Area</th>
+              <th>Description</th>
+              <th>Features</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Manlius</strong></td>
+              <td>3-bed ranch near village</td>
+              <td>2-car garage, hardwood, bonus room</td>
+              <td>$385k</td>
+            </tr>
+            <tr>
+              <td><strong>Outer Manlius</strong></td>
+              <td>3-bed ranch, 1,700 sq ft</td>
+              <td>AC, new kitchen, big deck</td>
+              <td>$400k</td>
+            </tr>
+            <tr>
+              <td><strong>Fayetteville</strong></td>
+              <td>3-bed ranch in FM district</td>
+              <td>AC, garage, office + sunroom</td>
+              <td>$350k</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="footer-note">
+          These examples show your criteria are common in Fayetteville & Manlius within your budget.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Agent Message Template</h2>
+        <p>
+          “I’m looking for a 3-bedroom single-story ranch in Fayetteville or Manlius with a bonus room, central air, a 2-car garage, an updated kitchen, and a primary suite. Budget $350k–$400k.”
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
